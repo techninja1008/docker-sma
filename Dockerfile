@@ -1,7 +1,7 @@
 FROM python
 
 WORKDIR /app
-RUN apt update && apt install bluez-utils
+RUN apt update && apt install -y bluez
 
 RUN git clone https://github.com/dgibson/python-smadata2 .
 
